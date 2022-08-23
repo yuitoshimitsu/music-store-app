@@ -1,0 +1,528 @@
+ /* reset css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url("fonts/hnlight/0e6de1ec911a2e267ff136bbdd384a44.eot");
+
+  /* IE9 */
+  src: url("fonts/hnlight/0e6de1ec911a2e267ff136bbdd384a44.eot?#iefix") format("embedded-opentype"), url("fonts/hnlight/0e6de1ec911a2e267ff136bbdd384a44.woff2") format("woff2"), url("fonts/hnlight/0e6de1ec911a2e267ff136bbdd384a44.woff") format("woff"), url("fonts/hnlight/0e6de1ec911a2e267ff136bbdd384a44.ttf") format("truetype"), url("fonts/hnlight/0e6de1ec911a2e267ff136bbdd384a44.svg#Helvetica Neue Light") format("svg");
+
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Helvetica Neue 65 Medium";
+  src: url("fonts/hnmedium/6c6db39a56fe8e8f19ba47c6a0770a18.eot");
+
+  /* IE9 */
+  src: url("fonts/hnmedium/6c6db39a56fe8e8f19ba47c6a0770a18.eot?#iefix") format("embedded-opentype"), url("fonts/hnmedium/6c6db39a56fe8e8f19ba47c6a0770a18.woff2") format("woff2"), url("fonts/hnmedium/6c6db39a56fe8e8f19ba47c6a0770a18.woff") format("woff"), url("fonts/hnmedium/6c6db39a56fe8e8f19ba47c6a0770a18.ttf") format("truetype"), url("fonts/hnmedium/6c6db39a56fe8e8f19ba47c6a0770a18.svg#Helvetica Neue 65 Medium") format("svg");
+
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Helvetica Neue 77 Bold Condensed";
+  src: url("fonts/hnbold/d72e521f27450184733d89aa499e531c.eot");
+
+  /* IE9 */
+  src: url("fonts/hnbold/d72e521f27450184733d89aa499e531c.eot?#iefix") format("embedded-opentype"), url("fonts/hnbold/d72e521f27450184733d89aa499e531c.woff2") format("woff2"), url("fonts/hnbold/d72e521f27450184733d89aa499e531c.woff") format("woff"), url("fonts/hnbold/d72e521f27450184733d89aa499e531c.ttf") format("truetype"), url("fonts/hnbold/d72e521f27450184733d89aa499e531c.svg#Helvetica Neue 77 Bold Condensed") format("svg");
+
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("fonts/gbold/5d6f50ed2dde0e4ad455448f896c09f0.eot");
+
+  /* IE9 */
+  src: url("fonts/gbold/5d6f50ed2dde0e4ad455448f896c09f0.eot?#iefix") format("embedded-opentype"), url("fonts/gbold/5d6f50ed2dde0e4ad455448f896c09f0.woff2") format("woff2"), url("fonts/gbold/5d6f50ed2dde0e4ad455448f896c09f0.woff") format("woff"), url("fonts/gbold/5d6f50ed2dde0e4ad455448f896c09f0.ttf") format("truetype"), url("fonts/gbold/5d6f50ed2dde0e4ad455448f896c09f0.svg#Gotham Bold") format("svg");
+
+  /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Gotham Rounded Light";
+  src: url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.eot");
+
+  /* IE9 */
+  src: url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.eot?#iefix") format("embedded-opentype"), url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.woff2") format("woff2"), url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.woff") format("woff"), url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.ttf") format("truetype"), url("fonts/grlight/1549fe8fd297f1e6501a3d6ad7f77394.svg#Gotham Rounded Light") format("svg");
+
+  /* iOS 4.1- */
+}
+
+.f-hl {
+  font-family: "Helvetica Neue Light", sans-serif;
+}
+
+.f-hm {
+  font-family: "Helvetica Neue 65 Medium", sans-serif;
+}
+
+.f-hb {
+  font-family: "Helvetica Neue 77 Bold Condensed", sans-serif;
+}
+
+.f-gb {
+  font-family: "Gotham Bold", sans-serif;
+}
+
+.f-gl {
+  font-family: "Gotham Rounded Light", sans-serif;
+}
+
+/* Styling header */
+header {
+  background-color: rgb(52, 58, 64);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1605px;
+  margin: auto;
+}
+
+/* Styling header left */
+.container img.WAVVES-icon {
+  height: 62px;
+  float: left;
+}
+
+.container .logo {
+  color: white;
+  font-family: Fascinate;
+  padding: 13px 51px 13px 8px;
+  font-size: 32px;
+  float: left;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.top-left .menu{
+  display: flex;
+  padding: 15px 5px;
+}
+
+.menu .menu-item {
+  font-size: 18px;
+  padding: 7px 7px;
+}
+
+.top-left .menu .menu-item:nth-child(1) {
+  color: rgb(211, 82, 102);
+}
+
+.top-left .top-left-2 {
+  color: rgb(136, 136, 136);
+}
+
+/* Styling header right */
+.top-right {
+  display: flex;
+}
+
+.top-right .fa-envelope {
+  color: rgb(136, 136, 136);
+  width: 18px;
+  padding: 30px 30px;
+}
+
+.top-right p {
+  color: white;
+  font-size: 20px;
+  padding: 23px 10px;
+}
+
+.top-right img.profile-icon {
+  width: 76px;
+  border-radius: 59%;
+}
+
+/* Styling top-wrapper */
+.top-wrapper {
+  background-color: rgb(211, 82, 102);
+  height: 440px;
+  background-image: url('/images/waves-icon.png');
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: 15% 40%;
+}
+
+/* Styling top text and logo */
+.container .top-text {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  height: auto;
+}
+
+.top-text h1 {
+  font-family: Fascinate;
+  font-size: 100px;
+  height: 110px;
+  text-shadow: -2px -2px  rgb(90, 90, 90);
+}
+
+.top-text p {
+  font-size: 25px;
+}
+
+/* Styling top input */
+.top-inp {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.top-inp select {
+  width: 239px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  margin: 1px;
+}
+
+.top-inp input {
+  width: 475px;
+  font-size: 20px;
+  border: none;
+  margin: 1px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  width: 200px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+/* Styling hotads */
+main .container {
+  display: flex;
+  justify-content: center;
+}
+
+.hotads {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  
+}
+
+.hotads .top h3 {
+  color: rgb(136, 136, 136);
+}
+
+.hotads-detail {
+  margin: 25px 15px;
+  
+}
+
+/* Styling class="items"*/
+.hotads .hotads-image {
+  width: 262px;
+  float: left;
+  margin: 0 100px;
+}
+
+/* Styling class="text-items" */
+.hotads  p.item-name {
+  color:rgb(211, 82, 102);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.hotads .text-items p {
+  margin: 10px;
+}
+
+.hotads .items {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.hotads .text-items {
+  margin: 0 20px 0 50px;
+  width: 650px;
+}
+
+/* Styling class="value-items" */
+.value-items {
+  display: flex;
+}
+
+.value-items h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color:  rgb(211, 82, 102);
+  color: white;
+  border-radius: 5% 0 0 5%;
+  width: 90px;
+  height: 60px;
+}
+
+.value-items button {
+  margin: 0;
+  background-color:rgb(211, 82, 102);
+  border-radius: 0 5% 5% 0;
+  border: none;
+}
+
+.hotads-leftbotton i, .hotads-rightbotton i  {
+  color: rgb(211, 82, 102);
+}
+
+.hotads-leftbotton, .hotads-rightbotton {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 17px;
+  border: 2px solid;
+  border-color: rgb(218, 218, 218);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+
+/* String wrapper */
+.wrapper {
+  background-color: rgb(243,243,243);
+}
+
+.wrapper-title {
+  display: flex;
+  padding: 40px 20px 20px 20px;
+  margin: 0 50px;
+  border-bottom: 5px solid rgb(212, 212, 212);
+  flex-wrap: wrap;
+
+}
+
+.wrapper-title i.fa-solid.fa-guitar {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: rgb(136, 136, 136);
+}
+
+.wrapper-title p.title {
+  font-size: 25px;
+  margin: 0 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.wrapper-title p {
+  font-size: 20px;
+  padding: 6px 10px 0 10px;
+  color: rgb(136, 136, 136);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+img.guitar-image {
+  width: 160px;
+  margin: 0 25px;
+}
+
+.guitar-list {
+  background-color: white;
+  width: 250px;
+  height: 347px;
+  margin: 0 30px;
+}
+
+.wrapper-detail {
+  padding: 11px;
+  border: 2px solid rgb(207, 207, 207);
+}
+
+.guitar-describe {
+  padding: 0 12px;
+}
+
+.guitar-describe p.guitar-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.guitar-describe p.guitar-condition {
+  color: rgb(211, 82, 102);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.guitar-describe .item {
+  display: flex;
+  margin: 10px 0;
+}
+
+.guitar-describe i {
+  color: rgb(136, 136, 136);
+  border-radius: 0%;
+  border: 2px solid;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: rgb(190, 190, 190);
+}
+
+
+.guitar-describe p.price {
+  color: rgb(211, 82, 102);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 5px 5px 110px;
+}
+
+/* Stlying footer */
+/* Styling footer-left */
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.footer-left {
+  width: 34%;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+}
+
+.footer-left .logo img.WAVVES-icon {
+  width: 50px;
+  height: 40px;
+  margin: 10px 2% 10px 28%;
+}
+
+.footer-left .logo  h1 {
+  font-family: Fascinate;
+  font-size: 30px;
+  color: rgb(136, 136, 136);
+  margin: 10px 28% 10px 2%;
+}
+
+.footer-left p {
+  font-size: 20px;
+  width: 80%;
+  margin: 0 auto;
+  color: rgb(136, 136, 136);
+  text-align: center;
+}
+
+/* Styling footer-center */
+.footer-center {
+  width: 33%;
+  display: flex;
+}
+
+.footer-center .categories {
+  width: 50%;
+  margin: 5% 5% 3% 2%;
+}
+
+.footer-center .navigation {
+  width: 40%;
+  margin: 5% 5% 3% 2%;
+}
+
+.footer-center .menu-categories {
+  display: flex;
+  margin: 5% 3% 3% 0;
+}
+
+.footer-center .menu-navigation {
+  margin: 5% 3% 3% 0;
+}
+
+.footer-center h3 {
+  color: rgb(211, 82, 102);
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(211, 82, 102);
+}
+
+.categories .menu-item {
+  width: 50%;
+}
+
+/* Styling footer-right */
+.footer-right {
+  width: 33%;
+  margin: 50px 0;
+}
+
+.footer-right .country {
+  display: flex;
+}
+
+.footer-right .country h3 {
+  display: block;
+  color: rgb(211, 82, 102);
+  margin: 10px;
+  width: 30%;
+}
+
+.footer-right .country p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(136, 136, 136);
+  border: 1px solid rgb(202, 202, 202);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 5px 0;
+  width: 50%;
+}
+
+.copyright {
+  border-top: 1px solid rgb(201, 201, 201);
+  padding: 25px;
+  display: flex;
+}
+
+.copyright p {
+  color: rgb(136, 136, 136);
+}
+
+.copyright .icon {
+  font-size: 23px;
+  color: rgb(136, 136, 136);
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.copyright .icon i {
+  margin: 3px;
+}
